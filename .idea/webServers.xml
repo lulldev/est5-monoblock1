@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4a91fade-0ff5-47c3-878f-7bec82397e2a" name="monoblock1-production" url="http://77.37.148.102">
+        <fileTransfer host="77.37.148.102" port="22" rootFolder="/home/monoblock1" accessType="SFTP" password="df9adfdfdfe8df9fdfcfdf9b" username="testftp">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
