@@ -1,0 +1,205 @@
+body {
+    background-color: #F3F0E1;
+    color: #594752;
+    font-family: Comfortaa Bold, Regular, Light;
+}
+
+.monoblock {
+    background-color: #F3F0E1;
+}
+
+.monoblock-header {
+    margin-bottom: 7px;
+}
+
+.monoblock-logo {
+    max-width: 245px;
+    margin-left: -15px;
+    padding: 0;
+}
+
+.monoblock-page-title {
+    margin-top: 50px;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.monoblock-page-subtitle {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* Monoblock content */
+
+.monoblock-content {
+    padding-bottom: 30px;
+}
+
+
+/* Monoblock direction menu */
+
+.direction-menu {
+    margin-top: 15px;
+}
+
+.direction-menu .menu-item {
+    /*width: 16%;*/
+    min-height: 410px;
+    border: 2px solid #928883;
+    background-color: #F7F7EF;
+    /*margin-right: -10px;*/
+    margin: -10px;
+    position: relative;
+    cursor: pointer;
+    transition:all 0.4s ease;
+}
+
+/* Effect for blocks */
+.zoomed
+{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 999;
+}
+
+.direction-menu .menu-item a {
+    text-decoration: none;
+    color: #594752;
+}
+
+.direction-menu .menu-item .item-title {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.direction-menu .menu-item .item-note {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.direction-menu .menu-item .item-ul {
+    font-size: 14px;
+    padding-left: 20%;
+}
+
+.direction-menu .menu-item .item-ul li {
+    list-style-position: outside;
+    padding-left: 0px;
+}
+
+.direction-menu .menu-item .item-ul li {
+    padding-left: -10px;
+}
+
+.direction-menu .menu-item .item-img {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Monoblock master menu */
+
+/* Monoblock direction menu */
+
+.master-menu {
+    margin-top: 15px;
+}
+
+.master-menu .master-block {
+    padding-bottom: 20px;
+}
+
+.master-menu .master-item {
+    background: #F6F6EE;
+    border: 2px solid #928883;
+
+}
+.master-menu .master {
+    /*width: 16%;*/
+    min-height: 300px;
+    background-color: #3B111B;
+    color: #fff;
+    /*margin-right: -10px;*/
+    position: relative;
+    text-align: center;
+}
+
+.master-menu .master a {
+    text-decoration: none;
+    color: #594752;
+}
+
+.master-menu .master .master-name {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.master-menu .master .master-class {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.master-menu .master .master-img {
+    max-width: 128px;
+    padding-top: 50px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+.master-menu .clients {
+    margin-right: 10px;
+    margin-left: -20px;
+    margin-top: 10px;
+    background: #F6F6EE;
+    overflow: scroll;
+    max-height: 280px;
+    /* ie 10+ */
+    -ms-overflow-style: none;
+}
+/* chrome, safari */
+.master-menu .clients::-webkit-scrollbar { width: 0; }
+
+.master-menu .clients .client {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #EBEBEB;
+}
+
+.master-menu .clients .client:hover {
+    background: #F3F0E1;
+    cursor: pointer;
+}
+
+/* Monoblock footer menu */
+
+.monoblock-footer-menu {
+    margin-top: 30px;
+}
+
+/* Monoblock complete page */
+
+.complete-page img {
+    height: 500px;
+}
+
+/* Loading page */
+
+.loading-page {
+   padding-top: 100px;
+}
+
+/* Loading page */
+
+.message-page {
+    padding-top: 100px;
+}

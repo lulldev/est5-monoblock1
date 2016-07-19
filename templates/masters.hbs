@@ -1,0 +1,82 @@
+<script type="text/x-handlebars-template">
+    <div class="master-menu">
+
+        {{#each masters}}
+
+            <div class="col-lg-4 master-block">
+                <div class="master-item">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="master">
+                                <img src="http://online.est5.ru/photo/{{master_id}}" class="img img-responsive master-img"/>
+                                <div class="master-name">{{{masterFio master_fullname}}}</div>
+                                <span class="master-class">{{master_class}}</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="clients">
+                                {{#each records}}
+                                    <!-- Only single records -->
+                                    <div class="client" data-record-id="{{record_id}}" data-master-id="{{master_id}}">
+                                        <div class="record_time">{{record_time}}</div>
+                                        {{#if is_group }}
+                                            {{#each Clients}}
+                                                - {{shortFio fullname}}{{shortFio Clients.client_fact}}<br>
+                                            {{/each}}
+                                        {{else}}
+                                            <div class="client_fio">
+                                                {{shortFio Clients.fullname}}
+                                                {{shortFio Clients.client_fact}}
+                                            </div>
+                                        {{/if}}
+                                    </div>
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        {{/each}}
+
+    </div>
+
+<!--        <div class="col-lg-4">
+            <div class="master-item">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="master">
+                            <img src="http://online.est5.ru/photo/00409" class="img img-responsive master-img"/>
+                            <div class="master-name">Мшанецкая Оксана</div>
+                            <span class="master-class">топ-стилист</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="clients">
+                            <div class="client">
+                                <div class="record_time">14:20</div>
+                                <div class="client_fio">Рожкова Светлана</div>
+                            </div>
+                            <div class="client">
+                                <div class="record_time">14:20</div>
+                                <div class="client_fio">Рожкова Светлана</div>
+                            </div>
+                            <div class="client">
+                                <div class="record_time">14:20</div>
+                                <div class="client_fio">Рожкова Светлана</div>
+                            </div>
+                            <div class="client">
+                                <div class="record_time">14:20</div>
+                                <div class="client_fio">Рожкова Светлана</div>
+                            </div>
+                            <div class="client">
+                                <div class="record_time">14:20</div>
+                                <div class="client_fio">Рожкова Светлана</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+</script>
